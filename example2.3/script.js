@@ -6,7 +6,7 @@ import { HDRCubeTextureLoader } from 'https://cdn.jsdelivr.net/npm/three@0.124.0
 
 // declare variables to store scene, camera, and renderer
 let scene, camera, renderer
-const model = 'Rhino_Logo.3dm'
+const model = 'mmm.3dm'
 
 // call functions
 init()
@@ -54,11 +54,11 @@ function init () {
     material.roughness = 0.0
 
     // or create a material
-    // material = new THREE.MeshStandardMaterial( {
-    //     color: 0xffffff,
-    //     metalness: 0.0,
-    //     roughness: 0.0
-    // } )
+     material = new THREE.MeshStandardMaterial( {
+         color: 778899,
+         metalness: 0.0,
+         roughness: 0.0
+     } )
 
     // load hdr cube map
     // cubeMap = new HDRCubeTextureLoader()

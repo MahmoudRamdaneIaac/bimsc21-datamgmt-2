@@ -5,7 +5,7 @@ import { Rhino3dmLoader } from 'https://cdn.jsdelivr.net/npm/three@0.124.0/examp
 
 // declare variables to store scene, camera, and renderer
 let scene, camera, renderer
-const model = 'Rhino_Logo.3dm'
+const model = 'mmm.3dm'
 
 // call functions
 init()
@@ -35,6 +35,14 @@ function init () {
     const directionalLight = new THREE.DirectionalLight( 0xffffff )
     directionalLight.intensity = 2
     scene.add( directionalLight )
+
+
+    material = new THREE.MeshStandardMaterial( {
+         color: 0xffffff,
+         metalness: 0.0,
+        roughness: 0.0
+     } )
+    
 
     // load the model
     const loader = new Rhino3dmLoader()
